@@ -3,6 +3,23 @@
 让 [dsh-pet](https://github.com/PC2005-cloud/dsh-pet) 里的大肥鱼带你锻炼：右键她 →「更多」→「一起锻炼」，
 她会报动作、做示范、气泡倒计时、休息时喝水，偶尔偷个懒被你抓包，练完欢呼。
 
+<table>
+  <tr>
+    <td align="center"><img src="docs/gifs/squat_open_close.gif" width="150" alt="开合深蹲"><br>开合深蹲</td>
+    <td align="center"><img src="docs/gifs/curtsy_lunge.gif" width="150" alt="屈膝礼弓步"><br>屈膝礼弓步</td>
+    <td align="center"><img src="docs/gifs/lunge.gif" width="150" alt="弓步蹲"><br>弓步蹲</td>
+    <td align="center"><img src="docs/gifs/wall_sit_loop.gif" width="150" alt="靠墙静蹲"><br>靠墙静蹲</td>
+    <td align="center"><img src="docs/gifs/bridge_loop.gif" width="150" alt="臀桥"><br>臀桥</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/gifs/drink.gif" width="150" alt="休息：喝口水"><br>休息：喝口水</td>
+    <td align="center"><img src="docs/gifs/lazy_phone.gif" width="150" alt="偷懒：看一眼消息"><br>偷懒：看一眼消息</td>
+    <td align="center"><img src="docs/gifs/lazy_rice.gif" width="150" alt="偷懒：先干口饭"><br>偷懒：先干口饭</td>
+    <td align="center"><img src="docs/gifs/lazy_think.gif" width="150" alt="偷懒：深度思考"><br>偷懒：深度思考</td>
+    <td align="center"><img src="docs/gifs/cheer.gif" width="150" alt="练完欢呼"><br>练完欢呼</td>
+  </tr>
+</table>
+
 这是 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（dsh）插件，**本身不画宠物**，
 全程通过 dsh-pet 开放的第三方接口指挥 dsh-pet 里的那一只，所以必须先装 dsh-pet。
 
@@ -79,7 +96,7 @@ node scripts/normalize-clips.mjs <desk-pet>/characters/dafeiyu/workout/clips   #
 ## 许可
 
 - **代码**：[MIT](LICENSE)
-- **动画素材**（`assets/clips/`）：**CC BY-NC-SA 4.0，不可商用**，见 [`LICENSE-ASSETS.md`](LICENSE-ASSETS.md)
+- **动画素材**（`assets/clips/`，以及 README 里的 GIF `docs/gifs/`）：**CC BY-NC-SA 4.0，不可商用**，见 [`LICENSE-ASSETS.md`](LICENSE-ASSETS.md)
 
 形象「大肥鱼」是社区二创的 DeepSeek 形象，**非 DeepSeek 官方形象**；原型「溟月」出自 B 站 [@上善无形](https://space.bilibili.com/4456176)，
 DeepSeek 版（女仆鲸鱼娘）设计出自 B 站 [@ZipZipPipe](https://space.bilibili.com/4168597)。

@@ -1,6 +1,6 @@
 # 动画素材的授权
 
-`assets/clips/` 下的动画**不适用 MIT**（[`LICENSE`](LICENSE) 只覆盖代码），适用
+`assets/clips/` 下的动画和 `docs/gifs/` 下的 GIF（由这些动画转成）**不适用 MIT**（[`LICENSE`](LICENSE) 只覆盖代码），适用
 [**CC BY-NC-SA 4.0**](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans)：署名 · 非商业 · 相同方式共享。
 
 ## 为什么是这个协议
