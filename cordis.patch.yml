@@ -1,0 +1,6 @@
+# dsh-pet-workout 的 bundle patch：装上插件后 DSH 启动时自动叠进配置树。
+# 它本身不画宠物，只通过 dsh-pet 的第三方接口（/dsh-pet-7340）指挥 dsh-pet 里的那只。
+- insert:
+    - id: dsh-pet-workout
+      name: dsh-pet-workout
+      config: {}

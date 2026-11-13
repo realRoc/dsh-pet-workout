@@ -1,0 +1,107 @@
+{
+  "frame": {
+    "w": 640,
+    "h": 360,
+    "height": 265,
+    "foot": 329,
+    "cx": 325
+  },
+  "clips": {
+    "squat": {
+      "file": "squat.webm",
+      "secs": 5.04
+    },
+    "squat_open_close": {
+      "file": "squat_open_close.webm",
+      "secs": 6.04
+    },
+    "curtsy_lunge": {
+      "file": "curtsy_lunge.webm",
+      "secs": 5.04
+    },
+    "lunge": {
+      "file": "lunge.webm",
+      "secs": 6.04
+    },
+    "deadlift": {
+      "file": "deadlift.webm",
+      "secs": 7.04
+    },
+    "bridge_enter": {
+      "file": "bridge_enter.webm",
+      "secs": 4.04
+    },
+    "bridge_loop": {
+      "file": "bridge_loop.webm",
+      "secs": 5.04
+    },
+    "bridge_single_loop": {
+      "file": "bridge_single_loop.webm",
+      "secs": 5.04
+    },
+    "bridge_exit": {
+      "file": "bridge_exit.webm",
+      "secs": 4.04
+    },
+    "wall_sit_enter": {
+      "file": "wall_sit_enter.webm",
+      "secs": 4.04
+    },
+    "wall_sit_loop": {
+      "file": "wall_sit_loop.webm",
+      "secs": 5.04
+    },
+    "wall_sit_exit": {
+      "file": "wall_sit_exit.webm",
+      "secs": 4.04
+    },
+    "tired": {
+      "file": "tired.webm",
+      "secs": 5.04
+    },
+    "drink": {
+      "file": "drink.webm",
+      "secs": 6.04
+    },
+    "cheer": {
+      "file": "cheer.webm",
+      "secs": 5.04
+    },
+    "collapse": {
+      "file": "collapse.webm",
+      "secs": 8.04
+    },
+    "lazy_doze": {
+      "file": "lazy_doze.webm",
+      "secs": 6.04
+    },
+    "lazy_phone": {
+      "file": "lazy_phone.webm",
+      "secs": 7.04
+    },
+    "lazy_rice": {
+      "file": "lazy_rice.webm",
+      "secs": 8.04
+    },
+    "lazy_think": {
+      "file": "lazy_think.webm",
+      "secs": 7.04
+    },
+    "lazy_flop": {
+      "file": "lazy_flop.webm",
+      "secs": 7.04
+    },
+    "lazy_fish": {
+      "file": "lazy_fish.webm",
+      "secs": 7.04
+    },
+    "lazy_fake": {
+      "file": "lazy_fake.webm",
+      "secs": 7.04
+    },
+    "lazy_tailnap": {
+      "file": "lazy_tailnap.webm",
+      "secs": 8.04
+    }
+  }
+}

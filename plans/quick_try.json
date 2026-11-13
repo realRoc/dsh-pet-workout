@@ -1,0 +1,10 @@
+{
+  "name": "试一下（1 分钟）",
+  "rest": 8,
+  "rounds": 1,
+  "steps": [
+    {"move": "squat", "secs": 15},
+    {"move": "curtsy_lunge", "secs": 12, "side": "left"},
+    {"move": "wall_sit", "secs": 12}
+  ]
+}

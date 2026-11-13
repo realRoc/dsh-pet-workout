@@ -1,0 +1,49 @@
+{
+  "name": "dsh-pet-workout",
+  "version": "0.1.0",
+  "description": "一起锻炼：让 dsh-pet 里的大肥鱼带你做腿部训练——报动作、倒计时、陪你一起练。需要先装 dsh-pet。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "assets/clips",
+    "plans",
+    "cordis.patch.yml",
+    "LICENSE",
+    "LICENSE-ASSETS.md"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "clips": "node scripts/normalize-clips.mjs"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh-pet",
+    "desktop-pet",
+    "workout",
+    "fitness"
+  ],
+  "license": "SEE LICENSE IN LICENSE",
+  "engines": {
+    "node": ">=22"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/realRoc/dsh-pet-workout.git"
+  },
+  "peerDependencies": {
+    "dsh-pet": ">=0.4.8"
+  }
+}
