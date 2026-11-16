@@ -40,10 +40,11 @@
 
 ```bash
 dsh plugin --profile web add dsh-pet                              # 先装 dsh-pet（≥ 0.4.8）
-dsh plugin --profile web add github:realRoc/dsh-pet-workout       # 再装本插件
+dsh plugin --profile web add dsh-pet-workout                      # 再装本插件（npm）
 ```
 
-桌面应用把 `web` 换成 `desktop`。装完重启 dsh。
+桌面应用把 `web` 换成 `desktop`。装完重启 dsh。想跟 GitHub 上的最新代码，把第二行换成
+`dsh plugin --profile web add github:realRoc/dsh-pet-workout`。
 
 ## 一起锻炼
 
