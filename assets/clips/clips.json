@@ -102,6 +102,42 @@
     "lazy_tailnap": {
       "file": "lazy_tailnap.webm",
       "secs": 8.04
+    },
+    "water_offer": {
+      "file": "water_offer.webm",
+      "secs": 5.04
+    },
+    "water_offer_b": {
+      "file": "water_offer_b.webm",
+      "secs": 5.04
+    },
+    "water_knock": {
+      "file": "water_knock.webm",
+      "secs": 6.04
+    },
+    "water_throw": {
+      "file": "water_throw.webm",
+      "secs": 7.04
+    },
+    "water_leave": {
+      "file": "water_leave.webm",
+      "secs": 4.04
+    },
+    "water_return_sulk": {
+      "file": "water_return_sulk.webm",
+      "secs": 5.04
+    },
+    "water_return_makeup": {
+      "file": "water_return_makeup.webm",
+      "secs": 5.04
+    },
+    "water_cheers": {
+      "file": "water_cheers.webm",
+      "secs": 5.04
+    },
+    "water_offer_b2": {
+      "file": "water_offer_b2.webm",
+      "secs": 5.04
     }
   }
 }

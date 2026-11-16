@@ -15,7 +15,7 @@
 | --- | --- |
 | 角色形象「大肥鱼」 | 社区二创的 DeepSeek「大肥鱼」，**非 DeepSeek 官方形象**；原型「溟月」出自 B 站 [@上善无形](https://space.bilibili.com/4456176)，DeepSeek 版（女仆鲸鱼娘）设计出自 B 站 [@ZipZipPipe](https://space.bilibili.com/4168597) |
 | 起始立绘 | [1190fasheqi/dafeiyu-pet](https://github.com/1190fasheqi/dafeiyu-pet) 的三视图正面图 |
-| 跟练动画 | realRoc/desk-pet 用 Seedance 2.5 以上面的立绘为首尾帧生成，再由本仓库 `scripts/normalize-clips.mjs` 缩放到 dsh-pet 的画幅 |
+| 跟练、喝水动画 | realRoc/desk-pet 用 Seedance 2.5 以上面的立绘为首尾帧生成，再由本仓库 `scripts/normalize-clips.mjs` 缩放到 dsh-pet 的画幅 |
 
 ## 你可以
 

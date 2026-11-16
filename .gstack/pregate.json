@@ -1,0 +1,18 @@
+{
+  "$schema": "https://github.com/garrytan/gstack/docs/pregate.md#pregate-v1",
+  "runner": "node --test {files}",
+  "dependencies": {
+    "lib/session.js": ["test/session.test.mjs"],
+    "lib/moves.js": ["test/session.test.mjs"],
+    "lib/water.js": ["test/water.test.mjs"],
+    "lib/water-core.js": ["test/water.test.mjs", "test/client.test.mjs"],
+    "lib/water-store.js": ["test/water.test.mjs"],
+    "lib/stage.js": ["test/water.test.mjs"],
+    "lib/idle.js": ["test/client.test.mjs"],
+    "lib/pet-client.js": ["test/client.test.mjs"],
+    "assets/clips/clips.json": ["test/client.test.mjs"],
+    "lib/index.js": [],
+    "package.json": [],
+    "scripts/normalize-clips.mjs": []
+  }
+}
