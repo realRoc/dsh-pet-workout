@@ -1,28 +1,31 @@
 // 把 desk-pet 的跟练动画套进 dsh-pet 的画幅：640×360、VP9 + alpha，人物站立身高、脚底、中线和 dsh-pet 自己的动画对齐，
 // 这样插播时大肥鱼不会忽大忽小、跳位置。
 //
-//   node scripts/normalize-clips.mjs <desk-pet 角色包的 workout/clips 目录>
+//   node scripts/normalize-clips.mjs <desk-pet 角色包的 workout/clips 目录> [water/clips 目录 ...]
 //
+// 可以一次给几个源目录；输出合进 assets/clips/clips.json（同名片段覆盖，别的保留）。
 // 源目录的 clips.json 记录了每段动画裁剪后放在参考画布上的位置（ref.h = 站立身高，ref.foot = 脚底，ref.cx = 中线）。
 // dsh-pet 那边的数字是量出来的：assets/webm/东张西望.webm 第一帧（站立）不透明区域高 265、脚底 y=329、中线 x=325。
 import { execFileSync } from 'node:child_process'
-import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { join, resolve } from 'node:path'
 
 const DSH = { w: 640, h: 360, height: 265, foot: 329, cx: 325 }
 
-const src = process.argv[2]
-if (!src) {
-  console.error('用法：node scripts/normalize-clips.mjs <workout/clips 目录>')
+const srcs = process.argv.slice(2)
+if (!srcs.length) {
+  console.error('用法：node scripts/normalize-clips.mjs <workout/clips 目录> [water/clips 目录 ...]')
   process.exit(1)
 }
 const out = resolve(import.meta.dirname, '../assets/clips')
 mkdirSync(out, { recursive: true })
+const indexFile = join(out, 'clips.json')
+const index = existsSync(indexFile) ? JSON.parse(readFileSync(indexFile, 'utf8')).clips : {}
 
+for (const src of srcs) {
 const meta = JSON.parse(readFileSync(join(src, 'clips.json'), 'utf8'))
 const { ref } = meta
 const s = DSH.height / ref.h
-const index = {}
 
 for (const [name, clip] of Object.entries(meta.clips)) {
   const [, , cw, ch] = clip.crop
@@ -45,5 +48,6 @@ for (const [name, clip] of Object.entries(meta.clips)) {
   index[name] = { file, secs: +(clip.frames / clip.fps).toFixed(2) }
   console.log(`${name}: ${w}×${h} @ (${x}, ${y})`)
 }
+}
 
-writeFileSync(join(out, 'clips.json'), JSON.stringify({ frame: DSH, clips: index }, null, 2) + '\n')
+writeFileSync(indexFile, JSON.stringify({ frame: DSH, clips: index }, null, 2) + '\n')
