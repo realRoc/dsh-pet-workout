@@ -111,7 +111,9 @@ dsh plugin --profile web add dsh-pet-workout                      # 再装本插
 1. `POST /dsh-pet-7340/menu/item` 在右键「更多」里注册菜单项，`GET /menu/events` 长轮询等用户点；
 2. 开练时 `POST /lock` 拿占用锁——锁住期间她不再随机走动、碎碎念，只听我们的；每个动作前续一次锁；
 3. `POST /anim` 带 `url` 点播本插件托管的动画（插件在 dsh 同一个 Web 服务上提供 `/dsh-pet-workout/clips/*.webm`），
-   `GET /playback/{id}` 等它播完再播下一遍；
+   `GET /playback/{id}` 等它播完再播下一遍。这个路由有准入：要么过 DSH 自己的访问检查（Host / Origin + 登录），
+   要么带插件每次启动随机生成的钥匙 `?k=`（只交给 dsh-pet；桌面宠物拿不到 DSH 的 Cookie，靠它），
+   别的网页拿不到动画，也探不出你装了这个插件；
 4. `POST /broadcast` 弹气泡：报动作、倒计时、休息；
 5. 锁被用户收走（`lock-lost` + `cause: preempted`）就当暂停；练完 `POST /lock/release` 还给她。
 

@@ -1,6 +1,6 @@
 {
   "name": "dsh-pet-workout",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "一起锻炼 + 喝水提醒：让 dsh-pet 里的大肥鱼带你做腿部训练、到点催你喝水（不理她就一级级加码）。需要先装 dsh-pet。",
   "type": "module",
   "main": "lib/index.js",
